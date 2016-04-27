@@ -1,0 +1,27 @@
+<link rel="import" href="../polymer/polymer.html">
+<script src="../moment/moment.js"></script>
+<script src="../numbers2words/build/numbers2words.js"></script>
+
+<dom-module id="kulor-time-elapsed">
+  <template>
+    <span>{{time}}</span>
+  </template>
+  <script>
+    Polymer({
+      is: 'kulor-time-elapsed',
+      attached: function() {
+        var startTime = moment.utc();
+        var translator = new T2W("EN_US");
+
+        // Override the default delimiter "-" as I don't want twenty-one
+        T2W.EN_US.DICTIONARY.delimiters = [" ", "and"];
+
+        setInterval(function(){
+          var secondsSinceInit = moment.utc().diff(startTime, 'seconds');
+          var secondsToWords = translator.toWords(secondsSinceInit);
+          this.time = secondsToWords + ' seconds';
+        }.bind(this), 250);
+      }
+    });
+  </script>
+</dom-module>
