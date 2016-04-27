@@ -1,0 +1,23 @@
+{
+  "name": "kulor.com",
+  "homepage": "http://www.kulor.com",
+  "authors": [
+    "James Broad <jb@kulor.com>"
+  ],
+  "description": "James Broad's homepage",
+  "main": "",
+  "keywords": [
+    "kulor"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "^5.5.3"
+  }
+}
