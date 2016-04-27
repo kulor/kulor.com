@@ -18,6 +18,8 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "^5.5.3"
+    "foundation": "^5.5.3",
+    "kulor-time-elapsed": "https://github.com/kulor/polymer-time-elapsed.git",
+    "kulor-ipinfo": "https://github.com/kulor/polymer-ipinfo.git"
   }
 }

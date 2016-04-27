@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="bower_components/foundation/css/normalize.css" />
     <link rel="stylesheet" href="bower_components/foundation/css/foundation.css" />
     <link rel="stylesheet" href="css/kulor.css" />
-    <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Molengo" rel="stylesheet" type="text/css" async>
+    <link href="bower_components/kulor-time-elapsed/kulor-time-elapsed.html" rel="import" async>
+    <link href="bower_components/kulor-ipinfo/kulor-ipinfo.html" rel="import" async>
 </head>
 <body>
   <header id="masthead">
@@ -281,6 +284,10 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="finale">
+        <p>I hope all's good in <kulor-ipinfo></kulor-ipinfo> and thanks for spending <kulor-time-elapsed></kulor-time-elapsed> here. You can contact me by emailing my initials @kulor.com.</p>
       </section>
 
     </div>

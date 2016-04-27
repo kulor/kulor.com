@@ -132,7 +132,9 @@ p {
         opacity: 1;
     }
 
-#about p {
+#about p,
+#finale p
+{
     font-weight: 300;
     font-size: 26px;
 }
