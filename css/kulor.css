@@ -1,0 +1,256 @@
+/*
+ *
+ * Thanks for taking the time to read into my source files.
+ * Contact me at hello+css@kulor.com if you want to talk CSS
+ *
+ */
+
+body {
+    background: #fafafa;
+}
+
+section {
+    margin-bottom: 200px;
+}
+
+a {
+    transition: color 0.5s;
+}
+
+button {
+    transition: background 0.5s, color 0.5s;
+}
+
+nav {
+    background: #222;
+    position: fixed;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    will-change: transform; /* Helps with scroll jank */
+}
+
+    nav ul {
+        margin-bottom: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    nav li.active {
+        border-bottom: 1px solid #666;
+    }
+
+    nav li.active a {
+        color: #fff;
+    }
+
+    nav a {
+        color: #ddd;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    nav a:hover,
+    nav a:active,
+    nav a:focus
+    {
+        color: #fff;
+    }
+
+h2 {
+    font-weight: 200;
+    margin-bottom: 70px;
+}
+
+p {
+    color: #555;
+}
+
+#masthead {
+    background: #141414 url(../img/roads.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color: #d9d9d9;
+    text-align: center;
+    padding: 120px 0;
+    margin-bottom: 100px;
+    border-bottom: 2px solid #222;
+    z-index: 2;
+    position: relative;
+    min-height: 90vh;
+    will-change: transform; /* Helps with scroll jank */
+}
+
+    #masthead ::selection {
+        background: #000;
+        color: #fff;
+    }
+
+    #masthead h2 {
+        font-size: 90px;
+        font-weight: 400;
+        letter-spacing: -2px;
+        color: #dedede;
+        margin-bottom: 5px;
+    }
+
+    #masthead p {
+        font-size: 40px;
+        font-weight: 100;
+        letter-spacing: 3px;
+        color: #999;
+        transition: opacity 2s;
+    }
+
+    #masthead .logo {
+        color: #d9d9d9;
+        font-size: 17px;
+        font-family: 'Molengo', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        display: inline-block;
+        /*opacity: 0;*/
+        background: rgba(0,0,0,0.6);
+        padding: 20px 30px;
+        transition: opacity 2s;
+    }
+
+    #masthead .active {
+        opacity: 1;
+    }
+
+#about p {
+    font-weight: 300;
+    font-size: 26px;
+}
+
+#about strong {
+    font-weight: 400;
+}
+
+.portfolio h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.portfolio .row {
+    margin-bottom: 50px;
+}
+
+.portfolio a,
+.portfolio a h3
+{
+    transition: color 0.3s;
+}
+
+    .portfolio a:hover h3 {
+        color: #666;
+    }
+
+footer {
+    clear: both;
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+    footer h2 {
+        color: #555;
+        font-weight: 800;
+        letter-spacing: 2px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    footer a {
+        color: #999;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    footer a:hover,
+    footer a:active,
+    footer a:focus
+    {
+        color: #000;
+    }
+
+    footer ul {
+        padding-top: 20px;
+    }
+
+    footer li {
+        display: inline-block;
+        margin: 0 15px;
+        list-style: none;
+    }
+
+#contact {}
+
+    #contact .group {
+        margin-bottom: 25px;
+    }
+
+    #contact label {
+        text-align: right;
+        display: inline-block;
+        min-width: 100px;
+        font-size: 18px;
+    }
+
+    #contact input,
+    #contact textarea
+    {
+        color: #555;
+        font-size: 18px;
+        font-weight: 300;
+        display: block;
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #eee;
+        padding: 0;
+        padding-bottom: 5px;
+        box-shadow: none;
+        transition: border 0.2s;
+    }
+
+    #contact .error input,
+    #contact .error textarea
+    {
+        border-bottom: 1px solid #c60f13;
+    }
+
+    #contact input:focus,
+    #contact textarea:focus
+    {
+        outline: none;
+        border-bottom: 1px solid #999;
+    }
+
+    #contact button {
+        color: #555;
+    }
+
+#projects .columns {
+    opacity: 0.5;
+}
+
+#projects .highlight {
+    opacity: 1;
+}
