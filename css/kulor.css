@@ -13,6 +13,12 @@ section {
     margin-bottom: 200px;
 }
 
+@media (max-width: 640px) {
+  section {
+    margin-bottom: 80px;
+  }
+}
+
 a {
     transition: color 0.5s;
 }
@@ -34,12 +40,19 @@ nav {
 }
 
     nav ul {
+        margin-left: 0;
         margin-bottom: 0;
     }
 
     nav li {
         display: inline-block;
         margin: 0 20px;
+    }
+
+    @media (max-width: 640px) {
+      nav li {
+        margin: 0px 15px;
+      }
     }
 
     nav li.active {
@@ -66,8 +79,17 @@ nav {
     }
 
 h2 {
+    color: #484848;
     font-weight: 200;
     margin-bottom: 70px;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+  h2 {
+    margin-bottom: 30px;
+    font-size: 38px;
+  }
 }
 
 p {
@@ -92,6 +114,12 @@ p {
     will-change: transform; /* Helps with scroll jank */
 }
 
+@media (max-width: 640px) {
+  #masthead {
+    padding: 50px 20px;
+  }
+}
+
     #masthead ::selection {
         background: #000;
         color: #fff;
@@ -105,12 +133,31 @@ p {
         margin-bottom: 5px;
     }
 
+    @media (max-width: 640px) {
+      #masthead > .row {
+        transform: translateY(-25%);
+        margin-top: 50%;
+      }
+    }
+
+    @media (max-width: 640px) {
+      #masthead h2 {
+        font-size: 40px;
+      }
+    }
+
     #masthead p {
         font-size: 40px;
         font-weight: 100;
         letter-spacing: 3px;
         color: #999;
         transition: opacity 2s;
+    }
+
+    @media (max-width: 640px) {
+      #masthead p {
+        font-size: 30px;
+      }
     }
 
     #masthead .logo {
@@ -122,7 +169,6 @@ p {
         font-weight: 400;
         margin-bottom: 40px;
         display: inline-block;
-        /*opacity: 0;*/
         background: rgba(0,0,0,0.6);
         padding: 20px 30px;
         transition: opacity 2s;
@@ -150,6 +196,12 @@ p {
 
 .portfolio .row {
     margin-bottom: 50px;
+}
+
+@media (max-width: 640px) {
+  .portfolio .row {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio a,
@@ -200,6 +252,13 @@ footer {
         display: inline-block;
         margin: 0 15px;
         list-style: none;
+    }
+
+    @media (max-width: 640px) {
+      footer li {
+        display: block;
+        margin: 20px 10px;
+      }
     }
 
 #contact {}
