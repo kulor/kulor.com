@@ -1,0 +1,73 @@
+html {
+  background: #112;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 8%;
+}
+
+  @media (min-width: 500px) {
+    body {
+      padding: 12%;
+    }
+  }
+
+li {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 100px;
+  letter-spacing: -2px;
+}
+
+  @media (min-width: 500px) {
+    .logo {
+      position: fixed;
+      top: 70px;
+      left: -36px;
+      transform: rotate(-90deg);
+    }
+  }
+
+#masthead {
+  margin-bottom: 50%;
+}
+
+  #masthead p {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  @media (min-width: 500px) {
+    #masthead p {
+      font-size: 3rem;
+    }
+  }
+
+section {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 40vh;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #454656;
+}
+
+footer {
+  opacity: 0.5;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
